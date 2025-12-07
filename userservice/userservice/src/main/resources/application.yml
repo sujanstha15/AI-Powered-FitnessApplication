@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: userservice
+
+spring :
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitness-micro-user
+    username: user
+    password: user123
