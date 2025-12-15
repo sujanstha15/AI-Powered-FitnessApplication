@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ActivityController {
     private ActivityService activityService;
 
-    @PostMapping
+    @PostMapping("/api/messi")
     public ResponseEntity<ActivityResponse> trackActivity(@RequestBody ActivityRequest request){
         return ResponseEntity.ok(activityService.trackActivity(request));
     }

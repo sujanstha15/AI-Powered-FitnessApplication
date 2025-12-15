@@ -20,7 +20,7 @@ import java.util.Map;
 public class Activity {
     private String id;
     private String userId;
-    private ActivityType activityType;
+    private ActivityType type;
     private Integer duration;
     private Integer caloriesBurned;
     private LocalDateTime startTime;
