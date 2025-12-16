@@ -6,11 +6,12 @@ import com.fitness.userservice.model.User;
 import com.fitness.userservice.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-
+@Slf4j
 public class UserService {
     private final UserRepository repository;
 
@@ -65,7 +66,7 @@ public class UserService {
     }
 
     public Boolean existByUserId(String userId){
-
+        log.info("Calling User Validation API for userId: {}", userId);
         return repository.existsById(userId);
     }
 
