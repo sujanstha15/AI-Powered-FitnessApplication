@@ -1,4 +1,4 @@
-package com.fitness.activityservice.model;
+package com.fitness.aiservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +12,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-@Document(collection="activities")
 @Data
 @Builder
 @AllArgsConstructor
